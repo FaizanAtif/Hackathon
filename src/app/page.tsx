@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Nav1 from "./components/home/navbar1";
 import Nav2 from "./components/home/navbar2";
 import Caro1 from "./components/home/carousel";
@@ -11,7 +10,7 @@ import Desktop6 from "./components/home/desktop6";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Nav1 />
       <Nav2 />
       <Caro1  />
@@ -21,7 +20,6 @@ export default function Home() {
       <Caro3  />
       <Desktop4  />
       <Desktop6  />
-    
-    </div>
+    </>
   );
 }
