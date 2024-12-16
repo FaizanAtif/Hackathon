@@ -8,7 +8,7 @@ import arr from "@/app/public/homepage/@none.svg"
 
 export default function Desktop4() {
     return (
-      <div className="h-auto w-full bg-[#ffff] text-black px-48">
+      <div className="h-[1100px] w-full bg-[#ffff] text-black px-48">
         <div className="text-center ">
             <h6 className="text-sm font-bold text-[#23A6F0] mb-3">Practice Advice</h6>
             <h2 className="text-4xl font-bold text-[#252B42] mb-3">Featured Posts</h2>
@@ -17,7 +17,7 @@ export default function Desktop4() {
         </div>
         <div className="flex justify-between">
         <header className="w-[328px] h-[606px]">
-          <div className="bg-[url('https://s3-alpha-sig.figma.com/img/679b/3cdf/17b8ec542ce1c452944dfb51f10ba010?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EbjaIzmSBSESP8SmpOLaF~xZyTiLx-pL3jyu7osnWJaUwWz3CCoUweRoWjgR5n1Sk6RPDWXTIk3Re2n4nerdPxcaz9DHM7scjlmpyD8pGnfBONUbGAA19SM35sy86BGN64enA-o0xIo01p-RY5KPJ0Kkrp3qqup6ZJfcOVrz9y0BgF-uTopEFtMSu22WLobs6x8YrtUN5GCVyORsl-clmiWSF4jzK8tB3994jfYEkwgUWq0ExviCMykV37hm7dEK~LWqR25mYXiMiY5pk-XvAeGpAW96zo9demVbsJu2DjO9Ejv2jttR65iBb1lGE1IehEiwlY0He7R6T1j5rjRTJA__')] h-[450px] w-[348px]">
+          <div className="bg-[url('https://s3-alpha-sig.figma.com/img/679b/3cdf/17b8ec542ce1c452944dfb51f10ba010?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EbjaIzmSBSESP8SmpOLaF~xZyTiLx-pL3jyu7osnWJaUwWz3CCoUweRoWjgR5n1Sk6RPDWXTIk3Re2n4nerdPxcaz9DHM7scjlmpyD8pGnfBONUbGAA19SM35sy86BGN64enA-o0xIo01p-RY5KPJ0Kkrp3qqup6ZJfcOVrz9y0BgF-uTopEFtMSu22WLobs6x8YrtUN5GCVyORsl-clmiWSF4jzK8tB3994jfYEkwgUWq0ExviCMykV37hm7dEK~LWqR25mYXiMiY5pk-XvAeGpAW96zo9demVbsJu2DjO9Ejv2jttR65iBb1lGE1IehEiwlY0He7R6T1j5rjRTJA__')]  h-[450px] w-[348px]">
                 <h1 className="w-[70px] ml-5  p-1 text-center  bg-red-600 text-white">New</h1>
          {/* <Image src={pic1} alt="pic1" /> */}
          <div className="flex justify-evenly items-start pt-5 mr-36 mt-[125%]">

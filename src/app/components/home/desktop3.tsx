@@ -21,7 +21,7 @@ export default function Desktop3() {
         </div>
         <div className="flex flex-col items-start gap-20">
         <header className="flex justify-between gap-9 ml-32">
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic1} alt="pic1" className="w-[280px]" />
         <div className="flex flex-col items-start gap-5 ml-6 ">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -31,15 +31,15 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5 ">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
        {/* 2nd */}
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic2} alt="pic2" className="w-[280px]" />
         <div className="ml-6 flex flex-col items-start gap-5">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -49,15 +49,15 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
        {/* 3rd */}
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic3} alt="pic3" className="w-[280px]" />
         <div className="flex flex-col items-start gap-5 ml-6">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -67,15 +67,15 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
        {/* 4th */}
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic4} alt="pic4" className="w-[280px]" />
         <div className="flex flex-col items-start gap-5 ml-6">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -85,16 +85,16 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
         </header>
         <section className="flex justify-between gap-9 ml-32">
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic5} alt="pic5" className="w-[280px]" />
         <div className="flex flex-col items-start gap-5 ml-6">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -104,15 +104,15 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
        {/* 2nd */}
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic6} alt="pic6" className="w-[280px]" />
         <div className="flex flex-col items-start gap-5 ml-6">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -122,15 +122,15 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
        {/* 3rd */}
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic7} alt="pic7" className="w-[280px]"/>
         <div className="flex flex-col items-start gap-5 ml-6">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -140,15 +140,15 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>
        {/* 4th */}
-        <div className="flex flex-col items-start  gap-5">
+        <div className="flex flex-col items-start  gap-5 transform transition-transform duration-300 hover:scale-105">
         <Image src={pic8} alt="pic8" className="w-[280px]" />
         <div className="flex flex-col items-start gap-5 ml-6">
         <h5 className="font-bold text-sm text-[#252B42]">Graphic Design</h5>
@@ -158,10 +158,10 @@ export default function Desktop3() {
         <h5 className="font-bold text-[#23856D]">$6.48</h5>
         </div>
         <div className="flex gap-1.5 ">
-        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#23856D] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full"></h5>
-        <h5 className="bg-[#252B42] h-4 w-4 rounded-full"></h5>
+        <h5 className="bg-[#23A6F0] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#23856D] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
+        <h5 className="bg-[#E77C40] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150 "></h5>
+        <h5 className="bg-[#252B42] h-4 w-4 rounded-full transform transition-transform duration-300 hover:scale-150"></h5>
         </div>
         </div>
        </div>

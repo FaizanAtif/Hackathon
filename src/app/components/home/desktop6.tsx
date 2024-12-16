@@ -10,14 +10,14 @@ export default function Desktop6() {
       <div className="h-auto w-full bg-[#ffff] text-black ">
         <div className="w-[1044px] h-[651px] py-10 ml-[195px]">
             <header className="flex justify-between">
-                <h3 className="font-bold text-2xl text-[#252B42] ml-14">Bandage</h3>
+                <h3 className="font-bold text-3xl text-[#252B42] ml-14">Bandage</h3>
              <div className="flex flex-row justify-between gap-5 ">   
-                <Image  src={fb} alt="facebook"/>
-                <Image  src={insta} alt="instagram"/>
-                <Image  src={twitter} alt="twitter" className="mr-24"/>
+                <Image  src={fb} alt="facebook" className=" transform h-10 w-20 transition-transform duration-300 hover:scale-125"/>           
+              <Image  src={insta} alt="instagram" className=" transform h-10 w-20 transition-transform duration-300 hover:scale-125"/>
+                <Image  src={twitter} alt="twitter" className="mr-24 transform h-10 w-20 transition-transform duration-300 hover:scale-125"/>
              </div>
             </header>
-            <footer className="w-[1057px] mt-[80px]  border border-red-500">
+            <footer className="w-[1057px] mt-[40px]  border border-red-500">
                 <div className="w-[1050px] h-[270px] p-14 flex justify-between">
                     <div className="flex flex-col place-items-start gap-5">
                         <h5 className="text-[#252B42] font-bold">Company Info</h5>
@@ -52,7 +52,10 @@ export default function Desktop6() {
                         <div className="flex">
                         <input type="email"
                         placeholder="Your Email"
-                        className="text-[#737373] border border-[#F9F9F9] py-3" /> <button className="text-[#ffff] bg-[#23A6F0] py-3 px-4 ">Subscribe</button> 
+                        className="text-[#737373] border border-[#F9F9F9] py-3" /> <button className="text-white bg-[#23A6F0] py-3 px-4 border border-transparent transition-colors duration-300 hover:bg-white hover:text-[#23A6F0] hover:border-[#23A6F0]">
+                        Subscribe
+                    </button>
+                    
                         </div>
                         <h6 className=" text-xs text-[#737373]">Lore imp sum dolor Amit</h6>
                     </div>                    
