@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,24 +10,23 @@ import c from "@/app/public/homepage/btn-32.svg";
 
 export default function Nav2() {
     const [active, setActive] = useState(null);
-    const [hovered, setHovered] = useState(null);
 
     const menuItems = [
         { name: "Home", path: "/" },
-        { name: "Shop", path: "/dashboard/product" },
-        { name: "Products", path: "/dashboard/listpage" },
+        //{ name: "Shop", path: "/dashboard/product" },
+        { name: "Shop", path: "/dashboard/listpage" },
         { name: "About", path: "/dashboard/about" },
         { name: "Pricing", path: "/dashboard/pricing" },
         { name: "Contact", path: "/dashboard/contact" },
     ];
 
     return (
-        <div className="bg-[#ffffff] text-[#737373] h-auto sm:h-[58px] sm:w-[1140px] flex flex-col sm:flex-row sm:items-center items-center ml-[150px] sm:ml-0 justify-between px-4 sm:px-6 py-4">
+        <div className="bg-white text-[#737373] h-auto flex flex-col sm:flex-row sm:items-center justify-between px-4 py-4 mx-auto sm:max-w-screen-lg">
             {/* Logo */}
-            <h1 className="text-[#252B42] font-bold sm:ml-2 sm:text-2xl">Bandage</h1>
-
+            <h1 className="text-[#252B42] font-bold text-xl sm:text-2xl">Bandage</h1>
+            
             {/* Navigation Menu */}
-            <div className="flex flex-col  sm:flex-row text-center ml-[100px] mt-8 sm:mt-0 sm:ml-10 gap-5">
+            <div className="flex flex-col sm:flex-row text-center mt-4 sm:mt-0 gap-4">
                 {menuItems.map((item:any, index) => (
                     <Link href={item.path} key={index}>
                         <button
@@ -43,13 +43,14 @@ export default function Nav2() {
                 ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row text-[#23A6F0] mt-10 sm:mt-0  sm:gap-5 ml-[90px] sm:mr-4 sm:ml-10">
-                <h5 className="flex sm:flex-row  items-center  gap-2  ">
+            {/* User Actions */}
+            <div className="flex flex-col sm:flex-row text-[#23A6F0] sm:gap-4 mt-4 sm:mt-0">
+                <h5 className="flex items-center gap-2">
                     <Image src={prof} alt="prof" /> Login/Register
                 </h5>
-                <Image src={b} alt="search"className="transform transition-transform duration-300 hover:scale-125 text-center ml-11 sm:ml-0"/>
-                <Image src={a} alt="shop" className="text-center ml-11 sm:ml-0" />
-                <Image src={c} alt="follow" className="text-center ml-11 sm:ml-0"/>
+                <Image src={b} alt="search" className="transform transition-transform duration-300 hover:scale-125" />
+                <Image src={a} alt="shop" className="ml-4" />
+                <Image src={c} alt="follow" className="ml-4" />
             </div>
         </div>
     );

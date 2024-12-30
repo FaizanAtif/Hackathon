@@ -1,139 +1,119 @@
-import Image from "next/image"
-import tickmark1 from "@/app/public/pricing/icn-circle circle-xs secondary-color-1.svg"
-import tickmark2 from "@/app/public/pricing/icn-circle circle-xs mute.svg"
+import Image from "next/image";
+import tickmark1 from "@/app/public/pricing/icn-circle circle-xs secondary-color-1.svg";
+import tickmark2 from "@/app/public/pricing/icn-circle circle-xs mute.svg";
 
-export default function Pricing4 () {
-    return (
-        <div className="ml-[125px] w-[1000px] h-auto mt-16 font-bold flex flex-col items-start gap-10 sm:flex-row sm:justify-start sm:gap-[1px] sm:ml-[70px]">
-         {/* 1st div */}
-         <div className="flex flex-col items-start gap-8 border-[3px]  w-[320px] ml-2 sm:mt-10  border-[#23A6F0] sm:rounded-2xl">
-            <h1 className="text-2xl ml-[125px] font-extrabold text-[#252B42] mt-16">FREE</h1>
-            <p className=" ml-[85px] text-[#737373]">
-            <span>Organize across all</span> <br /> 
-            <span className="ml-[25px]">apps by hand</span>
-            </p>
-            <div className="text-[#23A6F0] flex flex-row justify-start gap-3 ml-[100px]">
-                <h1 className="font-extrabold text-4xl">0</h1>
-                <div>
-                    <h1 className="text-sm">$</h1>
-                    <h1 className="text-[#8EC2F2] text-sm ">per month</h1>
-                </div>
+export default function Pricing4() {
+  return (
+    <div className="w-full max-w-screen-xl mx-auto mt-16 px-4">
+      <div className="flex flex-col sm:flex-row justify-between gap-10 sm:gap-6">
+        {/* 1st Plan: FREE */}
+        <div className="flex flex-col items-start gap-8 border-2 w-full sm:w-[320px] border-[#23A6F0] sm:rounded-2xl p-8 bg-slate-50 shadow-lg">
+          <h1 className="text-2xl font-extrabold text-[#252B42] text-center sm:text-left mt-8">
+            FREE
+          </h1>
+          <p className="text-[#737373] text-center sm:text-left">
+            <span>Organize across all</span> <br />
+            <span>apps by hand</span>
+          </p>
+          <div className="text-[#23A6F0] flex items-center justify-center sm:justify-start gap-3 mt-4">
+            <h1 className="font-extrabold text-4xl">0</h1>
+            <div>
+              <h1 className="text-sm">$</h1>
+              <h1 className="text-[#8EC2F2] text-sm">per month</h1>
             </div>
-            <div className="flex  flex-col items-start gap-5 ml-[30px]">
-                {/* 1st div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="text-[#252b42]">Unlimited product updates</p>
-                </div>
-                {/* 2nd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="text-[#252b42]">Unlimited product updates</p>
-                </div>
-                {/* 3rd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="text-[#252b42]">Unlimited product updates</p>
-                </div>
-                {/* 4th div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark2} alt="tickgrey" />
-                    <p className="text-[#252b42] ">1GB  Cloud storage</p>
-                </div>
-                {/* 5th div child */}
-                <div className=" flex flex-row items-center  justify-center gap-5">
-                    <Image src={tickmark2} alt="tickgrey" />
-                    <p className="text-[#252b42] w-[200px] ">Email and community support</p>
-                </div>
-            </div>
-            <button className="flex items-center justify-center mb-16 py-4 px-20 ml-[35px] bg-[#23A6F0]">Try for free</button>
-         </div>
-         {/* 2nd div */}
-         <div className="flex flex-col items-start gap-8 border-[3px]  w-[335px] bg-[#252B42] sm:rounded-2xl  border-[#23A6F0]">
-            <h1 className="text-2xl ml-[95px] font-extrabold text- mt-16">STANDARD</h1>
-            <p className=" ml-[92px] text-white">
-            <span>Organize across all</span> <br /> 
-            <span className="ml-[25px]">apps by hand</span>
-            </p>
-            <div className="text-[#23A6F0] flex flex-row justify-start gap-3 ml-[80px]">
-                <h1 className="font-extrabold text-4xl">9.99</h1>
-                <div>
-                    <h1 className="text-sm">$</h1>
-                    <h1 className="text-[#8EC2F2] text-sm ">per month</h1>
-                </div>
-            </div>
-            <div className="flex  flex-col items-start text-white gap-5 ml-[30px]">
-                {/* 1st div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="">Unlimited product updates</p>
-                </div>
-                {/* 2nd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="">Unlimited product updates</p>
-                </div>
-                {/* 3rd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="">Unlimited product updates</p>
-                </div>
-                {/* 4th div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark2} alt="tickgrey" />
-                    <p className=" ">1GB  Cloud storage</p>
-                </div>
-                {/* 5th div child */}
-                <div className=" flex flex-row items-center  justify-center gap-5">
-                    <Image src={tickmark2} alt="tickgrey" />
-                    <p className=" w-[200px] ">Email and community support</p>
-                </div>
-            </div>
-            <button className="flex items-center justify-center mb-16 py-4 px-20 sm:mb-[104px] ml-[35px] bg-[#23A6F0]">Try for free</button>
-         </div>
-         {/* 3rd div */}
-         <div className="flex flex-col items-start gap-8 border-[3px]  w-[320px]   sm:mt-10 ml-2 sm:ml-0 sm:rounded-2xl border-[#23A6F0]">
-            <h1 className="text-2xl ml-[85px] font-extrabold text-[#252B42] mt-16">PREMIUM</h1>
-            <p className=" ml-[72px] text-[#737373]">
-            <span>Organize across all</span> <br /> 
-            <span className="ml-[25px]">apps by hand</span>
-            </p>
-            <div className="text-[#23A6F0] flex flex-row justify-start gap-3 ml-[65px]">
-                <h1 className="font-extrabold text-4xl">19.99</h1>
-                <div>
-                    <h1 className="text-sm">$</h1>
-                    <h1 className="text-[#8EC2F2]  text-sm ">per month</h1>
-                </div>
-            </div>
-            <div className="flex  flex-col items-start gap-5 ml-[30px]">
-                {/* 2nd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="text-[#252b42]">Unlimited product updates</p>
-                </div>
-                {/* 2nd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="text-[#252b42]">Unlimited product updates</p>
-                </div>
-                {/* 3rd div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark1} alt="tickgreen" />
-                    <p className="text-[#252b42]">Unlimited product updates</p>
-                </div>
-                {/* 4th div child */}
-                <div className=" flex flex-row items-center justify-center gap-5">
-                    <Image src={tickmark2} alt="tickgrey" />
-                    <p className="text-[#252b42] ">1GB  Cloud storage</p>
-                </div>
-                {/* 5th div child */}
-                <div className=" flex flex-row items-center  justify-center gap-5">
-                    <Image src={tickmark2} alt="tickgrey" />
-                    <p className="text-[#252b42] w-[200px] ">Email and community support</p>
-                </div>
-            </div>
-            <button className="flex items-center justify-center mb-16 py-4 px-20 ml-[35px] bg-[#23A6F0]">Try for free</button>
-         </div>
+          </div>
+          <div className="flex flex-col gap-5 mt-6">
+            {/* Features */}
+            {[1, 2, 3].map((_, index) => (
+              <div key={index} className="flex items-center gap-5">
+                <Image src={tickmark1} alt="tickgreen" />
+                <p className="text-[#252b42]">Unlimited product updates</p>
+              </div>
+            ))}
+            {[4, 5].map((_, index) => (
+              <div key={index} className="flex items-center gap-5">
+                <Image src={tickmark2} alt="tickgrey" />
+                <p className="text-[#252b42]">1GB Cloud storage</p>
+              </div>
+            ))}
+          </div>
+          <button className="w-full py-4 px-6 mt-8 bg-[#23A6F0] text-white text-lg rounded-lg hover:bg-[#1a87c1] transition duration-300">
+            Try for free
+          </button>
         </div>
-    )
+
+        {/* 2nd Plan: STANDARD */}
+        <div className="flex flex-col items-start gap-8 border-2 w-full sm:w-[335px] bg-[#252B42] border-[#23A6F0] sm:rounded-2xl p-8 shadow-lg">
+          <h1 className="text-2xl font-extrabold text-white text-center sm:text-left mt-8">
+            STANDARD
+          </h1>
+          <p className="text-white text-center sm:text-left">
+            <span>Organize across all</span> <br />
+            <span>apps by hand</span>
+          </p>
+          <div className="text-[#23A6F0] flex items-center justify-center sm:justify-start gap-3 mt-4">
+            <h1 className="font-extrabold text-4xl">9.99</h1>
+            <div>
+              <h1 className="text-sm">$</h1>
+              <h1 className="text-[#8EC2F2] text-sm">per month</h1>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 mt-6 text-white">
+            {/* Features */}
+            {[1, 2, 3].map((_, index) => (
+              <div key={index} className="flex items-center gap-5">
+                <Image src={tickmark1} alt="tickgreen" />
+                <p>Unlimited product updates</p>
+              </div>
+            ))}
+            {[4, 5].map((_, index) => (
+              <div key={index} className="flex items-center gap-5">
+                <Image src={tickmark2} alt="tickgrey" />
+                <p>1GB Cloud storage</p>
+              </div>
+            ))}
+          </div>
+          <button className="w-full py-4 px-6 mt-8 bg-[#23A6F0] text-white text-lg rounded-lg hover:bg-[#1a87c1] transition duration-300">
+            Try for free
+          </button>
+        </div>
+
+        {/* 3rd Plan: PREMIUM */}
+        <div className="flex flex-col items-start gap-8 border-2 w-full sm:w-[320px] border-[#23A6F0] sm:rounded-2xl p-8 bg-slate-50 shadow-lg">
+          <h1 className="text-2xl font-extrabold text-[#252B42] text-center sm:text-left mt-8">
+            PREMIUM
+          </h1>
+          <p className="text-[#737373] text-center sm:text-left">
+            <span>Organize across all</span> <br />
+            <span>apps by hand</span>
+          </p>
+          <div className="text-[#23A6F0] flex items-center justify-center sm:justify-start gap-3 mt-4">
+            <h1 className="font-extrabold text-4xl">19.99</h1>
+            <div>
+              <h1 className="text-sm">$</h1>
+              <h1 className="text-[#8EC2F2] text-sm">per month</h1>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 mt-6">
+            {/* Features */}
+            {[1, 2, 3].map((_, index) => (
+              <div key={index} className="flex items-center gap-5">
+                <Image src={tickmark1} alt="tickgreen" />
+                <p className="text-[#252b42]">Unlimited product updates</p>
+              </div>
+            ))}
+            {[4, 5].map((_, index) => (
+              <div key={index} className="flex items-center gap-5">
+                <Image src={tickmark2} alt="tickgrey" />
+                <p className="text-[#252b42]">1GB Cloud storage</p>
+              </div>
+            ))}
+          </div>
+          <button className="w-full py-4 px-6 mt-8 bg-[#23A6F0] text-white text-lg rounded-lg hover:bg-[#1a87c1] transition duration-300">
+            Try for free
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }

@@ -9,21 +9,21 @@ export default function Shopcart() {
   const imageArray = [pic1, pic2, pic3, pic4, pic5];
 
   return (
-    <div className="flex flex-col h-auto w-full sm:flex-row mt-10  ml-[130px] gap-8  sm:gap-3  justify-center sm:ml-[30px]    ">
+    <div className="flex flex-col sm:flex-row h-auto w-full mt-10 gap-8 sm:gap-3 justify-center sm:ml-[30px] ml-[130px]">
       {imageArray.map((val, i) => (
         <div
           key={i}
-          className="relative w-[313px] sm:w-[200px] sm:h-[190px] h-auto  " // Wrapper for each image
+          className="relative w-[313px] sm:w-[200px] sm:h-[190px] h-auto transform transition-transform duration-300 hover:scale-105" // Wrapper for each image
         >
           {/* Image */}
           <Image
             src={val}
             alt={`Product Image ${i + 1}`}
-            className="rounded-md"
+            className="rounded-md object-cover w-full h-full"
           />
           {/* Text Overlay */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 text-white rounded-md">
-            <p className="text-lg font-bold">Cloths</p>
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 text-white rounded-md transition-all duration-300 opacity-0 hover:opacity-100">
+            <p className="text-lg font-semibold">Cloths</p>
             <p className="text-sm">5 items</p>
           </div>
         </div>

@@ -1,30 +1,70 @@
-import pic1 from "@/app/public/homepage/card-item.svg"
-import pic2 from "@/app/public/homepage/col-md-3.svg"
-import pic3 from "@/app/public/homepage/card-item (1).svg"
-import pic4 from "@/app/public/homepage/card-item (2).svg"
+import pic1 from "@/app/public/homepage/card-item.svg";
+import pic2 from "@/app/public/homepage/col-md-3.svg";
+import pic3 from "@/app/public/homepage/card-item (1).svg";
+import pic4 from "@/app/public/homepage/card-item (2).svg";
 import Image from "next/image";
 
 export default function Desktop2() {
-    return (
-      <div className="h-[1300px] sm:h-[700px] w-[1140px] font-bold ml-[150px] sm:ml-0 bg-[#FAFAFA] text-[#252b42]">
-        <div className="w-[1050px] h-auto  pt-10 ">
-        <div className="sm:text-center sm:mb-20 sm:ml-32">
-            <h3 className="font-extrabold sm:text-2xl text-lg sm:ml-0 ml-[75px]">EDITOR'S PICKS</h3>
-            <p className="block md:hidden text-[10px] ml-[96px] font-normal mt-5 text-[#737373]">Problems trying to resolve <br />
-             <span className="ml-[13px]">the conflict between</span> </p>
-            <p className="hidden md:block text-sm font-normal text-[#737373]">Problems trying to resolve the conflict between </p>
+  return (
+    <div className="w-full max-w-7xl mx-auto px-4 py-12 bg-[#FAFAFA] text-[#252b42]">
+      <div className="max-w-6xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-8 md:mb-16">
+          <h3 className="text-xl md:text-2xl font-extrabold mb-4">
+            EDITOR'S PICKS
+          </h3>
+          <p className="text-sm text-[#737373] font-normal">
+            Problems trying to resolve the conflict between
+          </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-start h-[500px] w-[1050px] sm:gap-4 sm:ml-[40px] mt-10 sm:mt-0 ">
-            
-        <Image src={pic1} alt=" pics1" height={500} width={510} className="sm:h-[500px] sm:mt-10 h-[410px] ml-[20px] sm:ml-0 w-[250px] sm:w-[550px] transform transition-transform duration-300 hover:scale-110"/>
-        <Image src={pic2} alt="pics2" height={500} width={240} className="sm:h-[510px] h-[400px] ml-[10px] sm:ml-0 w-[300px] mt-7 sm:w-[250px] transform transition-transform duration-300 hover:scale-110" />
-        
-        <div className="flex-col  h-[500px] w-[240px]  ">
-        <Image src={pic3} alt="pics3" height={242} width={240} className="sm:h-[260px] h-[200px] mt-10 sm:mt-10 ml-[45px] sm:ml-0 w-[300px] sm:w-[350px] transform transition-transform duration-300 hover:scale-110" />
-        <Image src={pic4} alt=" pics4" height={242} width={240} className="sm:h-[260px] h-[200px] ml-[45px] mt-10 sm:mt-0 sm:ml-0 w-[300px] sm:w-[350px] transform transition-transform duration-300 hover:scale-110"  />
-        </div>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {/* Main large image */}
+          <div className="lg:col-span-2 h-[300px] md:h-[500px]">
+            <Image
+              src={pic1}
+              alt="Editor's pick 1"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              width={510}
+              height={500}
+            />
+          </div>
+
+          {/* Tall middle image */}
+          <div className="h-[300px] md:h-[500px]">
+            <Image
+              src={pic2}
+              alt="Editor's pick 2"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              width={240}
+              height={500}
+            />
+          </div>
+
+          {/* Right column with two images */}
+          <div className="flex flex-col gap-4 md:gap-6">
+            <div className="h-[300px] md:h-[242px]">
+              <Image
+                src={pic3}
+                alt="Editor's pick 3"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                width={240}
+                height={242}
+              />
+            </div>
+            <div className="h-[300px] md:h-[242px]">
+              <Image
+                src={pic4}
+                alt="Editor's pick 4"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                width={240}
+                height={242}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    );
-  }
+  );
+}

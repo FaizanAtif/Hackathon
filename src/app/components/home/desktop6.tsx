@@ -1,68 +1,154 @@
 import Image from "next/image";
-import fb from "@/app/public/homepage/ant-design_facebook-filled.svg"
-import insta from "@/app/public/homepage/ant-design_instagram-outlined.svg"
-import twitter from "@/app/public/homepage/twitter.svg"
 import Link from "next/link";
 
+// Import SVG files with proper type definitions
+import fbIcon from "@/app/public/homepage/ant-design_facebook-filled.svg";
+import instaIcon from "@/app/public/homepage/ant-design_instagram-outlined.svg";
+import twitterIcon from "@/app/public/homepage/twitter.svg";
 
-export default function Desktop6() {
+// Adding type declaration for StaticImageData
+import type { StaticImageData } from "next/image";
+
+interface SocialIcon {
+    src: StaticImageData;
+    alt: string;
+}
+
+const socialIcons: SocialIcon[] = [
+    { src: fbIcon, alt: "facebook" },
+    { src: instaIcon, alt: "instagram" },
+    { src: twitterIcon, alt: "twitter" },
+];
+
+export default function Footer(): JSX.Element {
     return (
-      <div className="h-auto w-full bg-[#ffff] text-black ">
-        <div className="w-[1044px] h-[651px] sm:h-[450px] py-10 ml-[155px] sm:ml-[30px]">
-            <header className="flex flex-col items-start sm:flex-row  justify-between">
-                <h3 className="font-bold sm:text-3xl text-[#252B42] sm:ml-14 ml-20">Bandage</h3>
-             <div className="flex  flex-row justify-between mt-4 gap-5 ml-[60px] ">   
-                <Image  src={fb} alt="facebook" className=" transform sm:h-10 sm:w-20 transition-transform duration-300 hover:scale-125"/>           
-              <Image  src={insta} alt="instagram" className=" transform sm:h-10 sm:w-20 transition-transform duration-300 hover:scale-125"/>
-                <Image  src={twitter} alt="twitter" className="mr-24 transform sm:h-10 sm:w-20 transition-transform duration-300 hover:scale-125"/>
-             </div>
-            </header>
-            <footer className="w-[1057px] mt-[40px]  border ">
-                <div className="w-[1050px] h-[270px] p-14 flex flex-col sm:flex-row  sm:justify-between">
-                    <div className="flex flex-col place-items-start gap-5">
-                        <h5 className="text-[#252B42] font-bold">Company Info</h5>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">About Us</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">Carrier</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">We are hiring</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373] mb-10">Blog</Link>
+        <div className="w-full bg-white">
+            <div className="max-w-[1200px] mx-auto px-4 py-8">
+                {/* Header Section */}
+                <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#252B42] mb-4 md:mb-0">
+                        Bandage
+                    </h3>
+                    <div className="flex items-center space-x-4">
+                        {socialIcons.map((icon, index) => (
+                            <Image 
+                                key={index}
+                                src={icon.src}
+                                alt={icon.alt}
+                                className="w-6 h-6 md:w-8 md:h-8 transform transition-transform hover:scale-110 cursor-pointer"
+                                width={32}
+                                height={32}
+                            />
+                        ))}
                     </div>
-                    <div className="flex flex-col place-items-start gap-5">
-                        <h5 className="text-[#252B42] font-bold">Legal</h5>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">About Us</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">Carrier</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">We are hiring</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373] mb-10">Blog</Link>
-                    </div>                    
-                    <div className="flex flex-col place-items-start gap-5">
-                        <h5 className="text-[#252B42] font-bold">Features</h5>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">Business Marketing</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">User Analytic</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">Live Chat</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373] mb-10">Unlimited Support</Link>
-                    </div>                    
-                    <div className="flex flex-col place-items-start gap-5">
-                        <h5 className="text-[#252B42] font-bold">Resources</h5>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">IOS & Android</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">Watch a Demo</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373]">Customers</Link>
-                        <Link href={''} className="font-bold text-sm text-[#737373] mb-10">API</Link>
-                    </div>                    
-                    <div className="flex flex-col place-items-start gap-5">
-                        <h5 className="text-[#252B42] font-bold">Get In Touch</h5>
-                        <div className="flex flex-col items-start sm:flex-row">
-                        <input type="email"
-                        placeholder="Your Email"
-                        className="text-[#737373] border border-[#F9F9F9] py-3" /> <button className="text-white bg-[#23A6F0] py-3 px-4 border border-transparent transition-colors duration-300 hover:bg-white hover:text-[#23A6F0] hover:border-[#23A6F0]">
-                        Subscribe
-                    </button>
-                    
-                        </div>
-                        <h6 className=" text-xs text-[#737373]">Lore imp sum dolor Amit</h6>
-                    </div>                    
                 </div>
-            </footer>
+
+                {/* Footer Content */}
+                <div className="border-t border-gray-200">
+                    <div className="py-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                            {/* Company Info */}
+                            <div className="space-y-4">
+                                <h5 className="font-bold text-lg text-[#252B42]">Company Info</h5>
+                                <nav className="flex flex-col space-y-2">
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        About Us
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Carrier
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        We are hiring
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Blog
+                                    </Link>
+                                </nav>
+                            </div>
+
+                            {/* Legal */}
+                            <div className="space-y-4">
+                                <h5 className="font-bold text-lg text-[#252B42]">Legal</h5>
+                                <nav className="flex flex-col space-y-2">
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        About Us
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Carrier
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        We are hiring
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Blog
+                                    </Link>
+                                </nav>
+                            </div>
+
+                            {/* Features */}
+                            <div className="space-y-4">
+                                <h5 className="font-bold text-lg text-[#252B42]">Features</h5>
+                                <nav className="flex flex-col space-y-2">
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Business Marketing
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        User Analytic
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Live Chat
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Unlimited Support
+                                    </Link>
+                                </nav>
+                            </div>
+
+                            {/* Resources */}
+                            <div className="space-y-4">
+                                <h5 className="font-bold text-lg text-[#252B42]">Resources</h5>
+                                <nav className="flex flex-col space-y-2">
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        IOS & Android
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Watch a Demo
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        Customers
+                                    </Link>
+                                    <Link href="/" className="text-[#737373] hover:text-[#23A6F0] transition-colors">
+                                        API
+                                    </Link>
+                                </nav>
+                            </div>
+
+                            {/* Get In Touch */}
+                            <div className="space-y-4">
+                                <h5 className="font-bold text-lg text-[#252B42]">Get In Touch</h5>
+                                <div className="flex flex-col space-y-2">
+                                    <div className="flex flex-col sm:flex-row gap-2">
+                                        <input 
+                                            type="email"
+                                            placeholder="Your Email"
+                                            className="px-4 py-2 border border-gray-200 rounded focus:outline-none focus:border-[#23A6F0]"
+                                        />
+                                        <button 
+                                            type="button"
+                                            className="px-6 py-2 bg-[#23A6F0] text-white rounded hover:bg-white hover:text-[#23A6F0] border border-transparent hover:border-[#23A6F0] transition-colors whitespace-nowrap"
+                                        >
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                    <p className="text-sm text-[#737373]">
+                                        Lorem ipsum dolor amit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     );
-  }
-  
+}

@@ -1,12 +1,26 @@
-export default function Heading () {
-    return (
-        <div className="ml-[160px] sm:ml-[20px] h-auto sm:text-center w-[950px] text-xs sm:text-sm font-bold mt-14 text-[#737373]">
-            <h1 className="ml-[80px] sm:ml-40 mb-5 sm:mb-3">PRICING</h1>
-            <h1 className="text-[#252B42] sm:ml-40 mb-5  sm:mb-3 ml-[20px] text-2xl sm:text-4xl font-extrabold">Simple Pricing</h1>
-            <div className="flex justify-start gap-4 mb-5 sm:gap-8 sm:mb-3 sm:ml-[500px] ml-[65px] ">
-                <h1  className="text-[#252B42]">Home</h1>
-                <h1>Pricing</h1>
-            </div>
-        </div>
-    )
+export default function Heading() {
+  return (
+    <div className="bg-slate-100 rounded-lg mx-auto w-full max-w-[950px] px-6 sm:px-8 py-12 flex justify-center items-center flex-col">
+      {/* Title Section */}
+      <div className="text-center mb-8">
+        <h1 className="text-[#737373] text-xs sm:text-sm font-bold mb-3 sm:mb-2">
+          PRICING
+        </h1>
+        <h1 className="text-[#252B42] text-3xl sm:text-5xl font-extrabold mb-5">
+          Simple Pricing
+        </h1>
+      </div>
+
+      {/* Breadcrumbs */}
+      <div className="flex justify-center items-center gap-4 mb-5 sm:gap-8 sm:mb-4">
+        <h1 className="text-[#252B42] text-sm sm:text-base font-medium hover:text-[#1D74F3] transition-all duration-200 cursor-pointer">
+          Home
+        </h1>
+        <h1 className="text-sm sm:text-base font-medium text-[#737373]">/</h1>
+        <h1 className="text-[#252B42] text-sm sm:text-base font-medium hover:text-[#1D74F3] transition-all duration-200 cursor-pointer">
+          Pricing
+        </h1>
+      </div>
+    </div>
+  );
 }

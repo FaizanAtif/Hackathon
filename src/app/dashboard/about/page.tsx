@@ -14,7 +14,7 @@ export default function Aboutpage () {
         <div className="">
             <NavAbt2  />
             <Aboutstrt  />
-            <Problem  />
+           
             <Stats  />
             <Card1  />
             <Team  />

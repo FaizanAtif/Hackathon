@@ -1,28 +1,36 @@
 import Image from "next/image";
-import contactlogo from '@/app/public/homepage/Vector@2x.svg'
-import facebook from '@/app/public/homepage/Vector.svg'
-import utube from '@/app/public/homepage/a (1).svg'
-import insta from '@/app/public/homepage/a.svg'
-import twitter from '@/app/public/homepage/icn settings icn-xs.svg'
+import contactlogo from '@/app/public/homepage/Vector@2x.svg';
+import facebook from '@/app/public/homepage/Vector.svg';
+import utube from '@/app/public/homepage/a (1).svg';
+import insta from '@/app/public/homepage/a.svg';
+import twitter from '@/app/public/homepage/icn settings icn-xs.svg';
 
 export default function Nav1() {
-    return (
-            <div className="bg-[#23856D]  h-[46px] w-full hidden sm:block">
-        <div className="text-white sm:text-sm flex flex-row items-center mx-6 justify-start gap-[110px]  h-[47px] w-full pr-14 ">
-        <h6 className="flex">
-            <Image src={contactlogo} alt="contactlogo"/> 
-            (225) 555-0118</h6>
-         <p>   michelle.rivera@example.com </p>
-        <p>Follow Us  and get a chance to win 80% off</p>
-        <p className="flex items-center">Follow Us  :
+  return (
+    <div className="bg-[#23856D] h-[46px] w-full">
+      <div className="text-white text-xs sm:text-sm flex flex-col sm:flex-row items-center justify-between px-6 py-2 sm:px-8 sm:py-3 gap-4 sm:gap-8">
         
-        <Image src={insta} alt="insta" className="mr-0"/> 
-        <Image src={utube} alt="utube"className="mr-2"/> 
-        <Image src={facebook} alt="fb "className="mr-2"/> 
-        <Image src={twitter} alt="twitr"className="mr-2"/> </p>
-
+        {/* Contact Information */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          <Image src={contactlogo} alt="contactlogo" className="w-5 sm:w-6" />
+          <h6>(225) 555-0118</h6>
         </div>
         
+        <p className="text-center sm:text-left sm:flex-1">michelle.rivera@example.com</p>
+
+        {/* Follow Us Section */}
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+          <p>Follow Us & Get a Chance to Win 80% Off</p>
+          <div className="flex items-center gap-3">
+            <p>Follow Us:</p>
+            <Image src={insta} alt="Instagram" className="w-6" />
+            <Image src={utube} alt="YouTube" className="w-6" />
+            <Image src={facebook} alt="Facebook" className="w-6" />
+            <Image src={twitter} alt="Twitter" className="w-6" />
+          </div>
+        </div>
+
       </div>
-    );
-  }
+    </div>
+  );
+}
