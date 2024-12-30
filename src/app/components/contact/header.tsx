@@ -10,7 +10,7 @@ export default function Header() {
     <div className="flex flex-col sm:flex-row items-center sm:items-start gap-10 sm:gap-16 text-[#252b42] font-bold w-full max-w-[1000px] mx-auto sm:px-8 mt-16">
       {/* Left Section */}
       <div className="flex flex-col items-start gap-6 sm:mt-0 mt-10 sm:w-[45%]">
-        <h1 className="text-xs sm:text-sm text-center sm:text-left sm:ml-0 ml-8 sm:ml-0 font-semibold">CONTACT US</h1>
+        <h1 className="text-xs sm:text-sm text-center sm:text-left ml-8 sm:ml-0 font-semibold">CONTACT US</h1>
         <p className="block md:hidden text-2xl text-center sm:text-left">
           Get in touch <br />
           <span className="ml-[34px]">today!</span>
