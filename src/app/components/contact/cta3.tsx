@@ -9,12 +9,12 @@ export default function Cta3() {
 
       {/* Subtitle */}
       <p className="text-sm text-center sm:text-left sm:ml-[30px] text-[#737373]">
-        WE CAN'T WAIT TO MEET YOU
+        WE CANT WAIT TO MEET YOU
       </p>
 
       {/* Heading */}
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center sm:text-left sm:ml-[50px] text-[#252b42]">
-        Let’s Talk
+        Lets Talk
       </h1>
 
       {/* Call-to-action Button */}

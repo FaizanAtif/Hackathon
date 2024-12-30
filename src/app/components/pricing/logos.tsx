@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import logo1 from "@/app/public/productpage/col-md-3.svg";
 import logo2 from "@/app/public/productpage/col-md-3 (1).svg";

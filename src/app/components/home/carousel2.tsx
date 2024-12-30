@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import React from 'react';
+import hero from '@/app/public/homepage/aa4437b65bb40c3e3edb92e61a4d6184.png';
 
 const Caro2 = () => {
   return (
@@ -50,8 +52,8 @@ const Caro2 = () => {
 
           {/* Right Image Section */}
           <div className="mt-8 sm:mt-0">
-            <img
-              src="/api/placeholder/220/330"
+            <Image
+              src={hero}
               alt="Vita Classic Product"
               className="w-[220px] h-[330px] sm:w-auto sm:h-[520px] object-cover"
             />

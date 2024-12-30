@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +8,8 @@ import b from "@/app/public/homepage/li (1).svg";
 import c from "@/app/public/homepage/btn-32.svg";
 
 export default function Nav2() {
-    const [active, setActive] = useState(null);
+    // Fixing the type issue by setting the state to be string or null
+    const [active, setActive] = useState<string | null>(null);
 
     const menuItems = [
         { name: "Home", path: "/" },
@@ -27,7 +27,7 @@ export default function Nav2() {
             
             {/* Navigation Menu */}
             <div className="flex flex-col sm:flex-row text-center mt-4 sm:mt-0 gap-4">
-                {menuItems.map((item:any, index) => (
+                {menuItems.map((item, index) => (
                     <Link href={item.path} key={index}>
                         <button
                             className={`px-3 py-1 rounded-md ${

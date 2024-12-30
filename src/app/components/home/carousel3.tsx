@@ -1,11 +1,9 @@
+import Image from 'next/image';
 import React from 'react';
-
+import hero from "@/app/public/homepage/1a41b674cbd12f927c7ea9a6ca0ce76c.png"
 
 
 const Caro2 = () => {
-  const imagePath ="/homepage/asian-woman-man-with-winter-clothes%201%20(1).svg";
-
-
   return (
     <div className="w-full bg-white">
       <div className="container mx-auto px-4 sm:px-6">
@@ -14,8 +12,8 @@ const Caro2 = () => {
         
 {/* Image - Left Side */}           
 <div className="block"> {/* Remove the hidden/md:block classes */}
-  <img
-    src={imagePath}
+  <Image
+    src={hero}
     alt="Neural Universe"
     className="w-[700px] h-[674px] object-cover"
   />
@@ -82,8 +80,8 @@ const Caro2 = () => {
 
           {/* Mobile Image - Bottom */}
           <div className="block md:hidden w-full">
-            <img
-              src={imagePath}
+            <Image
+              src={hero}
               alt="Neural Universe"
               className="w-[250px] h-[400px] object-cover mx-auto"
             />

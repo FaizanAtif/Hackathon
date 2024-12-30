@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import contactlogo from '@/app/public/homepage/Vector@2x.svg'
 import facebook from '@/app/public/homepage/Vector.svg'
 import utube from '@/app/public/homepage/a (1).svg'

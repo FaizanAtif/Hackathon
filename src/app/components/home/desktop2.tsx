@@ -11,7 +11,7 @@ export default function Desktop2() {
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-16">
           <h3 className="text-xl md:text-2xl font-extrabold mb-4">
-            EDITOR'S PICKS
+            EDITORS PICKS
           </h3>
           <p className="text-sm text-[#737373] font-normal">
             Problems trying to resolve the conflict between
