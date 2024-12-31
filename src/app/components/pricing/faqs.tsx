@@ -13,7 +13,7 @@ export default function Faqs() {
       <p className="block md:hidden text-base sm:text-xl text-[#737373] mt-6 text-center">
         <span className="ml-[10px]">We focus on ergonomics and meeting</span>
         <br />
-        <span className="ml-[20px]">you where you work. It's only</span>
+        <span className="ml-[20px]">you where you work. Its only</span>
         <br />
         <span className="ml-[40px]">a keystroke away.</span>
       </p>

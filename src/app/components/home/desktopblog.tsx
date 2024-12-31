@@ -25,9 +25,9 @@ export default function Desktop4() {
          <h6 className="text-[#737373] text-xs mb-5">New</h6>
          </div>  
          <p className="text-lg md:text-xl text-[#252B42] ml-5 mb-5">Loudest à la Madison #1  <br />
-         (L'integral)</p>
+         (L&aposintegral)</p>
          <p className="text-xs md:text-sm text-[#737373] ml-5 mb-5">We focus on ergonomics and meeting <br />
-    you where you work. It's only a <br />
+    you where you work. Its only a <br />
      away.</p>
      <div className="flex  flex-row justify-around ">
         <div className="flex">
@@ -54,9 +54,9 @@ export default function Desktop4() {
          <h6 className="text-[#737373] text-xs mb-5">New</h6>
          </div>  
          <p className="text-lg md:text-xl text-[#252B42] ml-5 mb-5">Loudest à la Madison #1 <br />
-         (L'integral)</p>
+         (Lintegral)</p>
          <p className="text-xs md:text-sm text-[#737373] ml-5 mb-5">We focus on ergonomics and meeting <br />
-    you where you work. It's only a <br />
+    you where you work. Its only a <br />
      away.</p>
      <div className="flex  flex-row justify-around ">
         <div className="flex">
@@ -83,9 +83,9 @@ export default function Desktop4() {
          <h6 className="text-[#737373] text-xs mb-5">New</h6>
          </div>  
          <p className="text-lg md:text-xl text-[#252B42] ml-5 mb-5">Loudest à la Madison #1  <br />
-         (L'integral)</p>
+         (Lintegral)</p>
          <p className="text-xs md:text-sm text-[#737373] ml-5 mb-5">We focus on ergonomics and meeting <br />
-    you where you work. It's only a <br />
+    you where you work. Its only a <br />
      away.</p>
      <div className="flex  flex-row justify-around ">
         <div className="flex">
