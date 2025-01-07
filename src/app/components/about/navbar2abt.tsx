@@ -13,7 +13,7 @@ export default function NavAbt2() {
   const menuItems = [
     { name: "Home", path: "/" },
     //{ name: "Shop", path: "/dashboard/product" },
-    { name: "Shop", path: "/dashboard/listpage" },
+    { name: "Shop", path: "/dashboard/shop" },
     { name: "About", path: "/dashboard/about" },
     { name: "Pricing", path: "/dashboard/pricing" },
     { name: "Contact", path: "/dashboard/contact" },

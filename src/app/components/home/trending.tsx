@@ -2,6 +2,9 @@ import Image from "next/image";
 import watch from "@/app/public/homepage/icon cool-icon-1.svg"
 import bar from "@/app/public/homepage/icon ant-design-area-chart-outlined.svg"
 import arr from "@/app/public/homepage/@none.svg"
+import trending1 from "@/app/public/homepage/trending1.jpg"
+import trending2 from "@/app/public/homepage/trending2.jpg"
+import trending3 from "@/app/public/homepage/trending3.jpg"
 
 export default function Desktop4() {
     return (
@@ -16,7 +19,9 @@ export default function Desktop4() {
         </div>
         <div className=" flex flex-col items-start  md:flex-row md:justify-start md:gap-4 ml-[250px]">
         <header className="w-[328px] h-[500px] md:h-[606px]">
-          <div className="bg-[url('https://s3-alpha-sig.figma.com/img/679b/3cdf/17b8ec542ce1c452944dfb51f10ba010?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AWHI9m034m0iopAiiyDQGDYeAQOmB-qO2D3ouP61svnKlvaq8IQx88J1g3wuspqXHxx~rq1qaicaQ9mP~cvUW0nec32oHDtqpy9XlqJL8wh~aFC6dt-pdWWvSe9KpnqpMumbrgHD4YJZYE6aVlzP1g7jHamshVDPs1F9kRMee1mqEE8OH~Gou62fYYLHAILUGMjhA1WitvID61hxR2P71tUJ8D7t5f279pAtY4R7rkaeyoBk6BvgwEvaUEU3jAwm9NJmNnvSQutxSGmE~do0hC9MLqXbA2muLqntm-WhM-Ut4MHxApbY0pVv5DEzKVimyzAVCMpkCL~QHcHRle8QTA__')] h-[220px] w-[250px] md:h-[450px] md:w-[320px]">
+          <div className=" h-[220px] w-[250px] md:h-[450px] md:w-[320px]" style={{
+          backgroundImage: `url(${trending1.src})`
+        }}>
                 <h1 className="w-[70px] ml-5  p-1 text-center md:text-base text-sm bg-red-600 text-white">New</h1>
          {/* <Image src={pic1} alt="pic1" /> */}
          <div className="flex  md:justify-evenly gap-5 md:gap-0 items-start pt-5 mr-36 mt-[190px] md:mt-[130%]">
@@ -45,7 +50,9 @@ export default function Desktop4() {
      </div>
             </header>
             <main className="w-[328px] h-[500px] md:h-[606px]">
-              <div className="bg-[url('https://s3-alpha-sig.figma.com/img/412d/5bc5/d51defa7e9522a5eb5f534d0442131b2?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ww4kYbd03QThabLQkB-20O79IJzc5WPeSwGwli92OYUKFIDKmV5CDWC0iSSrNq~9wCYdTKJLN4ooq5hXCw2-BmlwDZx--Agw8Ha9eU6GlmFdLFN~3BWgJvTZTOuHeHOTQTIxv7OeourB1s8buDB2bwG3ExYXRHr6TLLv8qCk8i7fT8M0qYMGviB4YDrT~VlCEyI-Jk8cvChLHlDX82-53CCoOOHYFLH2rL2NPNZObZw9rnMQNGQpYMLOckreB0yrSfbVUweR1cvZjzfqUvIvLddG0cgyx5kVDrcuXIAxIaq59JuE9GPYea22lF3ANNQ4Xv3dNSnZk1GwPsEMYYotRQ__')] h-[220px] w-[250px] md:h-[450px] md:w-[320px]">
+              <div className="h-[220px] w-[250px] md:h-[450px] md:w-[320px]" style={{
+          backgroundImage: `url(${trending2.src})`
+        }}>
                 <h1 className="w-[70px] ml-5  p-1 text-center md:text-base text-sm bg-red-600 text-white">New</h1>
          {/* <Image src={pic2} alt="pic1" /> */}
          <div className="flex md:justify-evenly gap-5 md:gap-0 items-start pt-5 mr-36  mt-[190px] md:mt-[130%] ">
@@ -74,7 +81,9 @@ export default function Desktop4() {
         </div>
             </main>
             <footer className="w-[328px] h-[500px] md:h-[606px]">
-            <div className=" bg-[url('https://s3-alpha-sig.figma.com/img/af91/645f/60a447510f7b4e8aa158f122b0d1fe29?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aatIwQ6XOU0mz9bZGqACa~X0vAE1~HoxZfv~51e20AB9hGvxp2CD3B~lKG-ptf19yTx78Dn7IfMHMRSw~Jj0Ac~wqVXKrDqK6HyoREcC~OrcqxLB8CALp~PWwb~pnJkh1dj0T9FqWs9N6L7ZTHqjtd~IfsNLzcG8WJ3kl0GvrYpT4VhHyODkd02WXdb1V9E7~LhPpzJ1uQx9vtCmapf6J7AuQXKw~r6gVho3BdNfvryk2lR~l3t6RSg0O5rOBXpfP~5iUdbTUBW6l~vtHggC3f1FI5tJJ8ASHb2Hy4R0-fUF2nQSeziTkQbgVmX~L5WQHIKz7l9iZE3i22sRtVkHwA__')] h-[220px] w-[250px] md:h-[450px] md:w-[320px]">
+            <div className="h-[220px] w-[250px] md:h-[450px] md:w-[320px]" style={{
+          backgroundImage: `url(${trending3.src})`
+        }}>
                 <h1 className="w-[70px] ml-5  p-1 text-center md:text-base text-sm  bg-red-600 text-white">New</h1>
          {/* <Image src={pic3} alt="pic1" /> */}
          <div className="flex md:justify-evenly gap-5 md:gap-0 items-start pt-5 mr-36  mt-[190px] md:mt-[130%]">

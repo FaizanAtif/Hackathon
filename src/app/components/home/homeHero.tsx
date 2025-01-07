@@ -1,4 +1,6 @@
 import React from 'react';
+import hero from '@/app/public/homepage/hero.jpg'
+
 
 const Caro1 = () => {
   return (
@@ -6,9 +8,10 @@ const Caro1 = () => {
       <div 
         className="bg-cover bg-center min-h-[400px] sm:h-[676px] w-full sm:w-auto relative"
         style={{
-          backgroundImage: `url('https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kc5e-ysBovZGTcX6DAFV8v7K5ekS65hV27N-0g4GDcKxOS0Z0YogIcIZLlSzKqY9qB9qdzNA3szeLjvtDTaix1styMF4tWp38Ao~8fxkp7jUhQFZbKz5DaSnxwI3SEf1kQgwjv7bGMxuj2~Syh6JqDYzVUYzHM7IOXeyCe3afTfgZAKG7JqX1QOSkp4Rn5YFQ2eTGBQ1bflxxL2lzdRK9vZ9XVXeabv9XJ4~TEiOYfyLdblFHy0YE3wMgcpPgqWW-dIo1emGgqL9f-vspoOoCMvBXSLm1oZAV1JUHR~kipMzk7CuIMjQp5ZktkZ34yPdtwOL3k3NMKCWB5GLXZ~zPA__')`
-        }}
-      >
+          backgroundImage: `url(${hero.src})`
+        }}>
+
+
         <div className="container mx-auto px-4 sm:px-6 h-full">
           <div className="flex flex-col justify-center h-full max-w-xl py-16 sm:py-28">
             {/* Summer 2024 heading */}

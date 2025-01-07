@@ -1,61 +1,89 @@
 import Image from 'next/image';
 import React from 'react';
-import hero from '@/app/public/homepage/aa4437b65bb40c3e3edb92e61a4d6184.png';
+import hero from "@/app/public/homepage/1a41b674cbd12f927c7ea9a6ca0ce76c.png"
+
 
 const Caro2 = () => {
   return (
-    <div className="max-w-[1140px] mx-auto bg-[#23856D] min-h-[400px] sm:h-[640px] w-full text-[#252b42]">
+    <div className="w-full bg-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between h-full pt-8 sm:pt-12">
-          {/* Left Content Section */}
-          <div className="text-white flex flex-col gap-5 sm:gap-16 sm:max-w-xl">
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-5 sm:gap-32 py-8 sm:py-16">
+          {/* Desktop Image - Left Side */}
+        
+{/* Image - Left Side */}           
+<div className="block"> {/* Remove the hidden/md:block classes */}
+  <Image
+    src={hero}
+    alt="Neural Universe"
+    className="w-[700px] h-[674px] object-cover"
+  />
+</div>
+
+          {/* Content Section */}
+          <div className="flex flex-col items-start gap-5 sm:gap-10 w-full sm:w-auto">
             {/* Summer 2024 heading */}
-            <h6 className="text-xs sm:text-sm font-bold pt-6 sm:pt-11">
+            <h6 className="text-[#BDBDBD] font-bold text-xs sm:text-base mt-12 sm:mt-28">
               SUMMER 2024
             </h6>
 
-            {/* Product Title */}
-            <h1 className="text-2xl sm:text-5xl font-bold">
-              Vita Classic
+            {/* Desktop Title */}
+            <h1 className="hidden md:block text-4xl font-extrabold text-[#252B42]">
+              Part of the Neural
               <br />
-              Product
+              Universe
             </h1>
 
-            {/* Mobile Description */}
-            <p className="block md:hidden text-xs font-normal">
-              We know how large objects
+            {/* Mobile Title */}
+            <h1 className="block md:hidden text-2xl font-extrabold text-[#252B42]">
+              Part of the
               <br />
-              will act, but things on a
+              <span className="ml-6">Neural</span>
               <br />
-              small scale
-            </p>
+              <span className="ml-3">Universe</span>
+            </h1>
 
             {/* Desktop Description */}
-            <p className="hidden md:block text-xs font-normal">
-              We know how large objects will act, We know
+            <p className="hidden md:block text-xl font-normal text-[#737373]">
+              We know how large objects will act,
               <br />
-              how large objects will act
+              but things on a small scale.We know how large
             </p>
 
-            {/* Price and CTA Section */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-8">
-              <h4 className="font-bold text-lg sm:text-2xl">$16.48</h4>
-              <button className="bg-[#2DC071] text-white font-bold 
-                px-3 py-2 sm:px-10 sm:py-3
-                text-sm sm:text-xl
-                transform transition-all duration-300 
-                hover:scale-110 hover:shadow-lg">
-                ADD TO CART
+            {/* Mobile Description */}
+            <p className="block md:hidden text-sm font-normal text-[#737373]">
+              <span className="ml-2">We know how large</span>
+              <br />
+              <span className="ml-2">objects will act, but</span>
+              <br />
+              things on a small scale.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-5 sm:gap-4 w-full sm:w-auto">
+              <button className="bg-[#23A6F0] sm:bg-[#2DC071] py-3 px-5 sm:py-5 sm:px-8 
+                text-xs sm:text-sm font-bold text-white
+                border border-[#23A6F0] sm:border-[#2DC071]
+                transition-colors duration-300
+                hover:bg-white hover:text-[#23A6F0] sm:hover:text-[#2DC071]">
+                BUY NOW
+              </button>
+              <button className="py-3 px-5 sm:py-5 sm:px-8 
+                text-xs sm:text-sm font-bold
+                border border-[#23A6F0] sm:border-[#2DC071]
+                text-[#23A6F0] sm:text-[#2DC071]
+                transition-colors duration-300
+                hover:bg-black hover:bg-opacity-80 hover:border-black hover:text-white">
+                READ MORE
               </button>
             </div>
           </div>
 
-          {/* Right Image Section */}
-          <div className="mt-8 sm:mt-0">
+          {/* Mobile Image - Bottom */}
+          <div className="block md:hidden w-full">
             <Image
               src={hero}
-              alt="Vita Classic Product"
-              className="w-[220px] h-[330px] sm:w-auto sm:h-[520px] object-cover"
+              alt="Neural Universe"
+              className="w-[250px] h-[400px] object-cover mx-auto"
             />
           </div>
         </div>
